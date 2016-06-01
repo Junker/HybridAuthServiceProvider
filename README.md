@@ -49,7 +49,7 @@ $app->get('/login/{provider}', function($provider) use ($app) {
 		$uid = $user_profile->identifier;
 		$login = $app['db']->fetchColumn('SELECT login FROM user WHERE oauth_type=? AND oauth_uid=?', [$provider, $uid]);
 
-		if ($id)
+		if ($login)
 		{
 			//force login. i.e.:
 			$user_provider = new \MySite\UserProvider($app['db']);
