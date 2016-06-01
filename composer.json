@@ -1,0 +1,21 @@
+{
+    "name": "junker/hybridauth-service-provider",
+    "description": "Silex HybridAuth Service Provider",
+    "keywords": ["silex","hybridauth","hybrid auth","oauth","auth"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Kosenkov",
+            "email": "dk-junker@ya.ru"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.*",
+        "hybridauth/hybridauth": "^2.6"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Junker" : "src/"
+        }
+    }
+}
